@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bem-vindo ao Meu Primeiro Projeto!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 24px;
+      padding: 60px 50px;
+      max-width: 620px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      animation: fadeUp 0.9s ease-out;
+    }
+
+    .wave {
+      font-size: 4rem;
+      display: inline-block;
+      animation: wave 2s infinite;
+      transform-origin: 70% 70%;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin: 10px 0 20px;
+      line-height: 1.2;
+    }
+
+    .highlight {
+      background: linear-gradient(90deg, #ffd86f, #fc6262);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    @keyframes wave {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      10%, 30% { transform: rotate(14deg); }
+      20% { transform: rotate(-8deg); }
+      40% { transform: rotate(-4deg); }
+      50% { transform: rotate(10deg); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <span class="wave">👋</span>
+    <h1>E aí, <span class="highlight">galera do vídeo!</span></h1>
+    <p>
+      Seja muito bem-vindo(a) ao <strong>Meu Primeiro Projeto</strong>!
+      Essa é a página inicial que estamos construindo juntos,
+      ao vivo, agora mesmo. 🚀
+    </p>
+    <span class="badge">✨ Obrigado por assistir! ✨</span>
+    <footer>Feito com 💜 durante o vídeo</footer>
+  </div>
+</body>
+</html>

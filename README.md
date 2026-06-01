@@ -1,2 +1,2 @@
-#Meu Primiro Projeto
+#Meu Primeiro Projeto
 Projeto de Aprendizado Claude Code
